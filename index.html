@@ -1,0 +1,1645 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Pérgolas del Caribe | Arquitectura y Construcción de Alto Nivel</title>
+    <meta name="description" content="Constructora de lujo en Colombia. Especialistas en diseño y construcción de pergolas, kioscos, estructuras de playa, casas y apartamentos de alta gama desde Cartagena para todo el país.">
+    <meta name="keywords" content="Construcción en Colombia, Pérgolas en Cartagena, Kioscos en Colombia, Constructora nacional, Casas de lujo, Apartamentos, Arquitectura, Obras civiles">
+    <link rel="canonical" href="https://pergolasdelcaribe.com/">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pergolasdelcaribe.com/">
+    <meta property="og:title" content="Pérgolas del Caribe | Arquitectura y Construcción de Lujo">
+    <meta property="og:description" content="Diseño y construcción de proyectos arquitectónicos de alto nivel en Colombia. Pérgolas, estructuras de playa y edificaciones premium.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* ==========================================================================
+           0. VARIABLES Y CONFIGURACIÓN BASE (Inspiración Constructora Buendía)
+           ========================================================================== */
+        :root {
+            --white: #FFFFFF;
+            --bg-light: #F5F5F5;
+            --gray-dark: #333333;
+            --black-soft: #1A1A1A;
+            --beige-sand: #D8C3A5;
+            --blue-petroleum: #264653;
+            --gold-accent: #C5A880; 
+            --font-main: 'Montserrat', sans-serif;
+            --font-heading: 'Playfair Display', serif;
+            --transition-smooth: cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-main);
+            background-color: var(--white);
+            color: var(--black-soft);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .section-padding {
+            padding: 7.5rem 0;
+        }
+
+        .section-padding-top {
+            padding-top: 4rem;
+        }
+
+        .bg-light { background-color: var(--bg-light); }
+        .bg-dark { background-color: var(--black-soft); }
+        .text-white { color: var(--white); }
+        .text-center { text-align: center; }
+        .text-justify { text-align: justify; }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .items-start { align-items: start; }
+
+        /* Tipografía Corporativa */
+        .section-subtitle {
+            display: block;
+            font-family: var(--font-main);
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 4px;
+            color: var(--blue-petroleum);
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+        }
+
+        .section-title {
+            font-family: var(--font-heading);
+            font-size: 2.75rem;
+            font-weight: 600;
+            color: var(--gray-dark);
+            margin-bottom: 2rem;
+            line-height: 1.2;
+        }
+
+        .gold-text { color: var(--gold-accent) !important; }
+        .paragraph { font-weight: 300; font-size: 1.05rem; color: #555; margin-bottom: 1.5rem; }
+        .text-white .paragraph { color: #BBB; }
+
+        /* Botones Premium */
+        .btn {
+            display: inline-block;
+            font-family: var(--font-main);
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            padding: 1rem 2.2rem;
+            border: 1px solid transparent;
+            cursor: pointer;
+            transition: all 0.4s var(--transition-smooth);
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            background-color: var(--blue-petroleum);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background-color: transparent;
+            border-color: var(--blue-petroleum);
+            color: var(--blue-petroleum);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            border: 1px solid var(--white);
+            color: var(--white);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--white);
+            color: var(--black-soft);
+        }
+
+        .btn-sm { padding: 0.6rem 1.2rem; font-size: 0.7rem; }
+        .btn-wide { width: 100%; max-width: 300px; }
+
+        .btn-text {
+            font-family: var(--font-main);
+            color: var(--blue-petroleum);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .btn-text:hover { color: var(--gold-accent); }
+
+        /* ==========================================================================
+           1. LOADER & HEADER
+           ========================================================================== */
+        .loader-container {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-color: var(--black-soft);
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.6s var(--transition-smooth), visibility 0.6s;
+        }
+
+        .loader-content { text-align: center; width: 250px; }
+        .loader-logo {
+            color: var(--white);
+            font-family: var(--font-main);
+            letter-spacing: 5px;
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+        .loader-bar {
+            width: 100%; height: 1px;
+            background-color: rgba(255,255,255,0.1);
+            position: relative; overflow: hidden;
+        }
+        .loader-bar::after {
+            content: ''; position: absolute; left: 0; top: 0; height: 100%; width: 40%;
+            background-color: var(--beige-sand);
+            animation: loading 1.5s infinite linear;
+        }
+
+        @keyframes loading {
+            0% { left: -40%; }
+            100% { left: 100%; }
+        }
+
+        /* Header Estilo Buendía */
+        .main-header {
+            position: fixed;
+            top: 0; left: 0; width: 100%; z-index: 1000;
+            background-color: transparent;
+            padding: 1.8rem 0;
+            transition: background-color 0.4s ease, padding 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .main-header.scrolled {
+            background-color: rgba(26, 26, 26, 0.95);
+            padding: 1rem 0;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: var(--white);
+        }
+        .logo-main { font-weight: 700; letter-spacing: 5px; font-size: 1.3rem; }
+        .logo-sub { font-weight: 300; letter-spacing: 3px; font-size: 0.7rem; color: var(--beige-sand); }
+
+        .nav-menu { display: flex; gap: 2rem; }
+        .nav-link {
+            font-family: var(--font-main);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+        .nav-link:hover, .nav-link.active { color: var(--white); }
+        .nav-link::after {
+            content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 1px;
+            background-color: var(--beige-sand); transition: width 0.3s ease;
+        }
+        .nav-link:hover::after, .nav-link.active::after { width: 100%; }
+
+        .header-actions { display: flex; align-items: center; gap: 1.5rem; }
+        .lang-selector { display: flex; gap: 0.5rem; }
+        .lang-btn {
+            background: none; border: none; color: rgba(255,255,255,0.4);
+            font-size: 0.75rem; cursor: pointer; font-weight: 600; padding: 0.2rem;
+            transition: color 0.3s;
+        }
+        .lang-btn.active, .lang-btn:hover { color: var(--white); }
+
+        .hamburger { display: none; background: none; border: none; cursor: pointer; }
+        .hamburger span { display: block; width: 25px; height: 2px; background-color: var(--white); margin: 5px 0; transition: 0.4s; }
+
+        /* ==========================================================================
+           2. HERO SECTION
+           ========================================================================== */
+        .hero-section {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .hero-parallax-bg {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 120%;
+            background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=90');
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+            will-change: transform;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(180deg, rgba(26,26,26,0.6) 0%, rgba(26,26,26,0.4) 50%, rgba(26,26,26,0.8) 100%);
+            z-index: 2;
+        }
+
+        .hero-content {
+            position: relative; z-index: 3; text-align: center; color: var(--white); max-width: 800px; padding: 0 1.5rem;
+        }
+
+        .hero-title {
+            font-family: var(--font-heading);
+            font-size: 4.5rem;
+            font-weight: 400;
+            letter-spacing: 2px;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-subtitle {
+            font-family: var(--font-main);
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: var(--beige-sand);
+            margin-bottom: 3rem;
+        }
+
+        .hero-buttons { display: flex; justify-content: center; gap: 1.5rem; }
+
+        .scroll-down-indicator {
+            position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%);
+            z-index: 3; color: var(--white); display: flex; flex-direction: column;
+            align-items: center; gap: 0.5rem; font-size: 0.7rem; letter-spacing: 3px; text-transform: uppercase;
+        }
+        .scroll-down-indicator i { animation: bounce 2s infinite; font-size: 0.9rem; margin-top: 5px; }
+
+        @keyframes bounce { 0%, 20%, 50%, 80%, 100% { transform: translateY(0); } 40% { transform: translateY(-8px); } 60% { transform: translateY(-4px); } }
+
+        /* ==========================================================================
+           3. NOSOTROS Y ESTADÍSTICAS
+           ========================================================================== */
+        .about-img-wrapper { position: relative; }
+        .about-img { width: 100%; height: auto; object-fit: cover; box-shadow: 0 20px 40px rgba(0,0,0,0.08); }
+        .img-experience-badge {
+            position: absolute; bottom: -2rem; left: -2rem;
+            background-color: var(--blue-petroleum); color: var(--white);
+            padding: 2rem; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        .badge-num { display: block; font-family: var(--font-heading); font-size: 2.5rem; font-weight: 600; line-height: 1; color: var(--beige-sand); }
+        .badge-txt { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; }
+
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+        .stat-card { text-align: center; padding: 2rem 1rem; background: var(--white); box-shadow: 0 5px 20px rgba(0,0,0,0.02); }
+        .stat-icon { font-size: 1.8rem; color: var(--beige-sand); margin-bottom: 1rem; }
+        .stat-number { display: block; font-family: var(--font-heading); font-size: 3rem; font-weight: 600; color: var(--gray-dark); margin-bottom: 0.5rem; }
+        .stat-label { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: #777; }
+
+        /* ==========================================================================
+           4. SERVICIOS (Tarjetas de Autor)
+           ========================================================================== */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+        .service-card {
+            background-color: var(--white);
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            transition: transform 0.4s var(--transition-smooth), box-shadow 0.4s var(--transition-smooth);
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+        }
+        .service-img-container { height: 180px; overflow: hidden; }
+        .service-img-container img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+        .service-card:hover .service-img-container img { transform: scale(1.08); }
+        .service-content { padding: 2rem 1.5rem; position: relative; }
+        .service-icon { font-size: 1.5rem; color: var(--gold-accent); margin-bottom: 1.2rem; display: block; }
+        .service-content h3 { font-family: var(--font-heading); font-size: 1.3rem; font-weight: 600; margin-bottom: 1rem; color: var(--gray-dark); }
+        .service-content p { font-size: 0.85rem; color: #666; margin-bottom: 1.5rem; height: 70px; overflow: hidden; }
+
+        /* ==========================================================================
+           5. PORTAFOLIO Y LIGHTBOX
+           ========================================================================== */
+        .filter-controls { display: flex; justify-content: center; gap: 1rem; margin-bottom: 3rem; flex-wrap: wrap; }
+        .filter-btn {
+            background: none; border: none; font-family: var(--font-main); text-transform: uppercase;
+            font-size: 0.75rem; font-weight: 600; letter-spacing: 2px; padding: 0.6rem 1.2rem;
+            cursor: pointer; color: #777; transition: all 0.3s;
+        }
+        .filter-btn.active, .filter-btn:hover { color: var(--black-soft); border-bottom: 1px solid var(--gold-accent); }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+        .portfolio-item {
+            position: relative; height: 350px; overflow: hidden; background-color: var(--black-soft);
+        }
+        .portfolio-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s var(--transition-smooth); }
+        .portfolio-overlay {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(26, 26, 26, 0.85); display: flex; flex-direction: column;
+            justify-content: center; align-items: center; padding: 2rem; text-align: center;
+            opacity: 0; transition: opacity 0.4s ease; z-index: 2;
+        }
+        .portfolio-item:hover img { transform: scale(1.1); }
+        .portfolio-item:hover .portfolio-overlay { opacity: 1; }
+
+        .portfolio-item-title { color: var(--white); font-family: var(--font-heading); font-size: 1.4rem; font-weight: 400; margin-bottom: 0.5rem; }
+        .portfolio-item-cat { color: var(--gold-accent); text-transform: uppercase; font-size: 0.7rem; letter-spacing: 2px; margin-bottom: 1.5rem; }
+        .lightbox-trigger {
+            background: none; border: 1px solid rgba(255,255,255,0.3); color: var(--white);
+            width: 45px; height: 45px; border-radius: 50%; display: flex; justify-content: center;
+            align-items: center; cursor: pointer; transition: all 0.3s;
+        }
+        .lightbox-trigger:hover { border-color: var(--white); background: var(--white); color: var(--black-soft); }
+
+        /* Estilos Lightbox */
+        .lightbox {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.92);
+            z-index: 2000; display: none; justify-content: center; align-items: center; opacity: 0; transition: opacity 0.4s ease;
+        }
+        .lightbox.show { display: flex; opacity: 1; }
+        .lightbox-content { max-width: 85%; max-height: 85%; object-fit: contain; }
+        .lightbox-close {
+            position: absolute; top: 2rem; right: 3rem; color: var(--white); font-size: 3rem; cursor: pointer; transition: 0.3s;
+        }
+        .lightbox-close:hover { color: var(--gold-accent); }
+
+        /* ==========================================================================
+           6 & 7. COTIZADOR Y FINANCIACIÓN
+           ========================================================================== */
+        .calc-card {
+            background-color: #222; border: 1px solid rgba(255,255,255,0.05); padding: 3rem;
+        }
+        .calc-card-title {
+            font-family: var(--font-heading); font-weight: 400; font-size: 1.6rem;
+            color: var(--white); margin-bottom: 2rem; display: flex; align-items: center; gap: 1rem;
+        }
+        .calc-card-title i { color: var(--gold-accent); font-size: 1.3rem; }
+        .calc-form { display: flex; flex-direction: column; gap: 1.5rem; }
+        .form-group { display: flex; flex-direction: column; gap: 0.5rem; position: relative; }
+        .form-group label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; color: #AAA; }
+        .form-input {
+            background-color: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1);
+            padding: 1rem; color: var(--white); font-family: var(--font-main); font-size: 0.9rem;
+            outline: none; transition: border-color 0.3s;
+        }
+        .form-input:focus { border-color: var(--gold-accent); background-color: rgba(255,255,255,0.06); }
+        select.form-input option { background-color: var(--black-soft); color: var(--white); }
+
+        .currency-toggle-wrapper { display: flex; align-items: center; justify-content: space-between; margin-top: 0.5rem; }
+        .api-status-text { font-size: 0.65rem; color: #666; font-style: italic; }
+
+        .results-display {
+            margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1);
+            display: flex; flex-direction: column; gap: 1rem;
+        }
+        .result-row { display: flex; justify-content: space-between; align-items: center; }
+        .result-row span { font-size: 0.85rem; color: #999; }
+        .result-row strong { font-family: var(--font-main); font-size: 1.4rem; color: var(--white); font-weight: 600; }
+        .results-gold .result-row strong { color: var(--gold-accent); }
+        .currency-indicator { font-size: 0.65rem; color: #555; text-transform: uppercase; letter-spacing: 1px; text-align: right; }
+
+        /* ==========================================================================
+           8, 9 & 10. CARRUSEL, MAPA Y CONTACTO
+           ========================================================================== */
+        .carousel-container { max-width: 800px; margin: 0 auto; position: relative; overflow: hidden; }
+        .carousel-track-wrapper { width: 100%; overflow: hidden; }
+        .carousel-track { display: flex; transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1); }
+        .testimonial-slide { min-width: 100%; padding: 0 2rem; text-align: center; }
+        .rating-stars { color: var(--gold-accent); margin-bottom: 1.5rem; font-size: 0.9rem; }
+        .testimonial-text { font-family: var(--font-heading); font-style: italic; font-size: 1.4rem; color: var(--gray-dark); margin-bottom: 2rem; line-height: 1.5; }
+        .testimonial-author { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 600; margin-bottom: 0.2rem; }
+        .testimonial-role { font-size: 0.75rem; color: #777; }
+        .carousel-dots { display: flex; justify-content: center; gap: 0.5rem; margin-top: 2.5rem; }
+        .dot { width: 8px; height: 8px; background: #DDD; border-radius: 50%; cursor: pointer; transition: background 0.3s; }
+        .dot.active { background: var(--blue-petroleum); width: 24px; border-radius: 4px; }
+
+        /* Mapa Integrado */
+        .map-section { position: relative; height: 450px; width: 100%; }
+        .map-info-box {
+            position: absolute; top: 3rem; left: 5rem; background: var(--white); padding: 2.5rem;
+            z-index: 10; box-shadow: 0 20px 40px rgba(0,0,0,0.1); max-width: 320px;
+        }
+        .map-info-box h4 { font-family: var(--font-main); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1rem; color: var(--blue-petroleum); }
+        .map-info-box .paragraph { font-size: 0.9rem; margin-bottom: 0; }
+        .map-iframe-container { width: 100%; height: 100%; }
+        .map-iframe-container iframe { filter: grayscale(1) invert(0.05); }
+
+        /* Formulario de Contacto */
+        .contact-wrapper { max-width: 850px; margin: 0 auto; background: var(--white); padding: 4rem; box-shadow: 0 30px 60px rgba(0,0,0,0.04); border: 1px solid #EEE; }
+        .contact-form .form-input { color: var(--black-soft); background-color: var(--bg-light); border-color: #E2E2E2; }
+        .contact-form .form-input:focus { border-color: var(--blue-petroleum); background-color: var(--white); }
+        .form-grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-bottom: 1.5rem; }
+        .contact-form .form-group { margin-bottom: 1.5rem; }
+        .error-msg { font-size: 0.7rem; color: #D93838; margin-top: 0.25rem; display: none; }
+        .form-input.invalid { border-color: #D93838; }
+        .form-success-box {
+            margin-top: 2rem; padding: 1.5rem; background-color: #E6F4EA; color: #137333;
+            border: 1px solid #CEEAD6; text-align: center; font-size: 0.9rem; font-weight: 500; display: none;
+        }
+
+        /* Floatings y Footer */
+        .whatsapp-float {
+            position: fixed; bottom: 2rem; right: 2rem; background-color: #25D366; color: var(--white);
+            width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center;
+            align-items: center; font-size: 1.8rem; box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            z-index: 999; text-decoration: none; transition: transform 0.3s;
+        }
+        .whatsapp-float:hover { transform: scale(1.1); }
+
+        .btn-back-to-top {
+            position: fixed; bottom: 6.5rem; right: 2.2rem; background-color: var(--black-soft); color: var(--white);
+            border: none; width: 45px; height: 45px; display: flex; justify-content: center; align-items: center;
+            cursor: pointer; opacity: 0; visibility: hidden; transition: all 0.4s; z-index: 998; border-radius: 2px;
+        }
+        .btn-back-to-top.show { opacity: 0.7; visibility: visible; }
+        .btn-back-to-top:hover { opacity: 1; background-color: var(--blue-petroleum); }
+
+        .main-footer { padding: 5rem 0 2rem 0; border-top: 1px solid rgba(255,255,255,0.05); }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 4rem; margin-bottom: 4rem; }
+        .footer-info h4 { font-family: var(--font-main); letter-spacing: 3px; font-size: 1.1rem; margin-bottom: 1.5rem; }
+        .footer-links h5, .footer-contact-info h5 { font-family: var(--font-main); text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px; color: var(--beige-sand); margin-bottom: 1.5rem; }
+        .footer-links ul { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; }
+        .footer-links a { color: #999; text-decoration: none; font-size: 0.85rem; transition: color 0.3s; }
+        .footer-links a:hover { color: var(--white); }
+        .footer-contact-info p { font-size: 0.85rem; color: #999; margin-bottom: 0.75rem; }
+        .footer-contact-info i { margin-right: 0.5rem; color: var(--beige-sand); }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.05); padding-top: 2rem; font-size: 0.75rem; color: #555; }
+
+        /* Engine de revelado mediante scroll */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s var(--transition-smooth), transform 0.8s var(--transition-smooth);
+        }
+        .scroll-reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ==========================================================================
+           11. RESPONSIVE DESIGN (Media Queries)
+           ========================================================================== */
+        @media (max-width: 1024px) {
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+            .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
+            .footer-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+            .grid-2 { gap: 2.5rem; }
+        }
+
+        @media (max-width: 768px) {
+            html { font-size: 14px; }
+            .section-padding { padding: 4.5rem 0; }
+            .grid-2 { grid-template-columns: 1fr; }
+            .items-start { align-items: stretch; }
+            .hero-title { font-size: 3rem; }
+            .stats-container { grid-template-columns: repeat(2, 1fr); }
+            .services-grid { grid-template-columns: 1fr; }
+            .portfolio-grid { grid-template-columns: 1fr; }
+            .form-grid-2 { grid-template-columns: 1fr; gap: 0; }
+            .map-info-box { position: relative; top: 0; left: 0; max-width: 100%; padding: 2rem; }
+            .contact-wrapper { padding: 2rem; }
+            
+            .hamburger { display: block; }
+            .hamburger.active span:nth-child(1) { transform: rotate(-45deg) translate(-5px, 6px); }
+            .hamburger.active span:nth-child(2) { opacity: 0; }
+            .hamburger.active span:nth-child(3) { transform: rotate(45deg) translate(-5px, -6px); }
+            
+            .nav-menu {
+                position: fixed; top: 0; right: -100%; width: 80%; height: 100vh;
+                background-color: var(--black-soft); flex-direction: column;
+                justify-content: center; align-items: center; gap: 2.5rem;
+                transition: right 0.5s var(--transition-smooth); z-index: 99;
+            }
+            .nav-menu.active { right: 0; }
+            .btn-header { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="loader" class="loader-container">
+        <div class="loader-content">
+            <h1 class="loader-logo">PÉRGOLAS DEL CARIBE</h1>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#inicio" class="logo" aria-label="Pérgolas del Caribe Home">
+                <span class="logo-main">PÉRGOLAS</span>
+                <span class="logo-sub">DEL CARIBE</span>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#inicio" class="nav-link active" data-i18n="nav-inicio">Inicio</a>
+                <a href="#nosotros" class="nav-link" data-i18n="nav-nosotros">Nosotros</a>
+                <a href="#servicios" class="nav-link" data-i18n="nav-servicios">Servicios</a>
+                <a href="#proyectos" class="nav-link" data-i18n="nav-proyectos">Proyectos</a>
+                <a href="#cotizador" class="nav-link" data-i18n="nav-cotizador">Cotizador</a>
+                <a href="#contacto" class="nav-link" data-i18n="nav-contacto">Contacto</a>
+            </nav>
+
+            <div class="header-actions">
+                <div class="lang-selector">
+                    <button class="lang-btn active" data-lang="es" title="Español">🇨🇴 ES</button>
+                    <button class="lang-btn" data-lang="en" title="English">🇺🇸 EN</button>
+                </div>
+                <a href="#cotizador" class="btn btn-primary btn-header" data-i18n="btn-header">Solicitar Cotización</a>
+                
+                <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero-section">
+        <div class="hero-parallax-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content scroll-reveal">
+            <h1 class="hero-title">Pérgolas del Caribe</h1>
+            <p class="hero-subtitle" data-i18n="hero-subtitle">Construimos espacios que transforman vidas</p>
+            <div class="hero-buttons">
+                <a href="#cotizador" class="btn btn-primary" data-i18n="btn-hero-1">Solicitar Presupuesto</a>
+                <a href="#proyectos" class="btn btn-secondary" data-i18n="btn-hero-2">Ver Proyectos</a>
+            </div>
+        </div>
+        <div class="scroll-down-indicator">
+            <span data-i18n="scroll-down">Descubrir</span>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <main>
+        <section id="nosotros" class="about-section section-padding">
+            <div class="container">
+                <div class="grid-2">
+                    <div class="about-text scroll-reveal">
+                        <span class="section-subtitle" data-i18n="about-subtitle">Arquitectura de Vanguardia</span>
+                        <h2 class="section-title" data-i18n="about-title">Nuestra Trayectoria</h2>
+                        <p class="paragraph text-justify" data-i18n="about-p1">
+                            Nacidos en el corazón de Cartagena, en Pérgolas del Caribe diseñamos y ejecutamos proyectos arquitectónicos y de ingeniería civil que redefinen el lujo sutil y el confort. Fusionamos la calidez de los entornos tropicales con la firmeza de las estructuras modernas de alta gama.
+                        </p>
+                        <p class="paragraph text-justify" data-i18n="about-p2">
+                            Nuestra cobertura se extiende a nivel nacional, llevando la sofisticación de nuestros diseños residenciales y corporativos a cada rincón de Colombia, garantizando siempre una supervisión impecable y acabados de categoría internacional.
+                        </p>
+                    </div>
+                    <div class="about-img-wrapper scroll-reveal">
+                        <div class="img-experience-badge">
+                            <span class="badge-num">7+</span>
+                            <span class="badge-txt" data-i18n="about-badge">Años de Excelencia</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Arquitectura Moderna Pérgolas del Caribe" class="about-img">
+                    </div>
+                </div>
+
+                <div class="stats-container section-padding-top scroll-reveal">
+                    <div class="stat-card">
+                        <i class="fa-solid fa-circle-check stat-icon"></i>
+                        <span class="stat-number" data-target="340">0</span>
+                        <p class="stat-label" data-i18n="stat-1">Proyectos Completados</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fa-solid fa-face-smile stat-icon"></i>
+                        <span class="stat-number" data-target="280">0</span>
+                        <p class="stat-label" data-i18n="stat-2">Clientes Satisfechos</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fa-solid fa-award stat-icon"></i>
+                        <span class="stat-number" data-target="7">0</span>
+                        <p class="stat-label" data-i18n="stat-3">Años de Experiencia</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fa-solid fa-map-location-dot stat-icon"></i>
+                        <span class="stat-number" data-target="22">0</span>
+                        <p class="stat-label" data-i18n="stat-4">Ciudades Atendidas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="services-section section-padding bg-light">
+            <div class="container">
+                <div class="text-center scroll-reveal">
+                    <span class="section-subtitle" data-i18n="services-subtitle">Soluciones Integrales</span>
+                    <h2 class="section-title" data-i18n="services-title">Nuestros Servicios Profesionales</h2>
+                </div>
+
+                <div class="services-grid section-padding-top scroll-reveal">
+                    <div class="service-card">
+                        <div class="service-img-container">
+                            <img src="https://images.unsplash.com/photo-1560185007-c5ca9d2c014d?auto=format&fit=crop&w=500&q=80" alt="Construcción de Pérgolas">
+                        </div>
+                        <div class="service-content">
+                            <i class="fa-solid fa-cloud-sun service-icon"></i>
+                            <h3 data-i18n="serv-t1">Pérgolas de Lujo</h3>
+                            <p data-i18n="serv-d1">Estructuras personalizadas en maderas nobles y aluminio automatizado para optimizar la luz y el confort exterior.</p>
+                            <a href="#contacto" class="btn-text" data-i18n="btn-more">Saber Más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-img-container">
+                            <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=500&q=80" alt="Construcción de Kioscos">
+                        </div>
+                        <div class="service-content">
+                            <i class="fa-solid fa-campground service-icon"></i>
+                            <h3 data-i18n="serv-t2">Kioscos Modernos</h3>
+                            <p data-i18n="serv-d2">Diseños tropicales sofisticados con cubiertas termoacústicas e ingeniería de vanguardia para climas exigentes.</p>
+                            <a href="#contacto" class="btn-text" data-i18n="btn-more">Saber Más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-img-container">
+                            <img src="https://images.unsplash.com/photo-1590073844006-33379778ae09?auto=format&fit=crop&w=500&q=80" alt="Construcción de Balcones">
+                        </div>
+                        <div class="service-content">
+                            <i class="fa-solid fa-door-open service-icon"></i>
+                            <h3 data-i18n="serv-t3">Balcones y Terrazas</h3>
+                            <p data-i18n="serv-d3">Ampliaciones y adecuaciones con cerramientos panorámicos y materiales resistentes a la salinidad costera.</p>
+                            <a href="#contacto" class="btn-text" data-i18n="btn-more">Saber Más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-img-container">
+                            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=500&q=80" alt="Estructuras para playas">
+                        </div>
+                        <div class="service-content">
+                            <i class="fa-solid fa-umbrella-beach service-icon"></i>
+                            <h3 data-i18n="serv-t4">Estructuras de Playa</h3>
+                            <p data-i18n="serv-d4">Infraestructura comercial y hotelera sobre arena o agua utilizando cimentaciones especiales amigables con el medio ambiente.</p>
+                            <a href="#contacto" class="btn-text" data-i18n="btn-more">Saber Más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-img-container">
+                            <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=500&q=80" alt="Construcción de casas">
+                        </div>
+                        <div class="service-content">
+                            <i class="fa-solid fa-house-chimney service-icon"></i>
+                            <h3 data-i18n="serv-t5">Casas de Altura</h3>
+                            <p data-i18n="serv-d5">Construcción residencial llave en mano con arquitectura bioclimática y acabados premium adaptados al entorno.</p>
+                            <a href="#contacto" class="btn-text" data-i18n="btn-more">Saber Más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-img-container">
+                            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=500&q=80" alt="Construcción de apartamentos">
+                        </div>
+                        <div class="service-content">
+                            <i class="fa-solid fa-building service-icon"></i>
+                            <h3 data-i18n="serv-t6">Edificación de Apartamentos</h3>
+                            <p data-i18n="serv-d6">Desarrollo de proyectos multifamiliares robustos con un control milimétrico de presupuestos y cronogramas.</p>
+                            <a href="#contacto" class="btn-text" data-i18n="btn-more">Saber Más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-img-container">
+                            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=500&q=80" alt="Dirección de obras">
+                        </div>
+                        <div class="service-content">
+                            <i class="fa-solid fa-trowel-bricks service-icon"></i>
+                            <h3 data-i18n="serv-t7">Gerencia de Proyectos</h3>
+                            <p data-i18n="serv-d7">Supervisión integral de megaproyectos y obras civiles, garantizando normativas técnicas y estándares internacionales.</p>
+                            <a href="#contacto" class="btn-text" data-i18n="btn-more">Saber Más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-img-container">
+                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=500&q=80" alt="Consultoría y presupuestos">
+                        </div>
+                        <div class="service-content">
+                            <i class="fa-solid fa-calculator service-icon"></i>
+                            <h3 data-i18n="serv-t8">Consultoría & Presupuestos</h3>
+                            <p data-i18n="serv-d8">Análisis detallado de costos unitarios, estudios de viabilidad estructural y auditorías técnicas operacionales.</p>
+                            <a href="#contacto" class="btn-text" data-i18n="btn-more">Saber Más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="portfolio-section section-padding">
+            <div class="container">
+                <div class="text-center scroll-reveal">
+                    <span class="section-subtitle" data-i18n="portfolio-subtitle">Portafolio Exclusivo</span>
+                    <h2 class="section-title" data-i18n="portfolio-title">Obras Arquitectónicas Sello Premium</h2>
+                </div>
+
+                <div class="filter-controls scroll-reveal">
+                    <button class="filter-btn active" data-filter="all" data-i18n="filter-all">Todos</button>
+                    <button class="filter-btn" data-filter="pergolas" data-i18n="filter-pergolas">Pérgolas</button>
+                    <button class="filter-btn" data-filter="casas" data-i18n="filter-casas">Casas</button>
+                    <button class="filter-btn" data-filter="apartamentos" data-i18n="filter-apto">Apartamentos</button>
+                    <button class="filter-btn" data-filter="playa" data-i18n="filter-playa">Estructuras de Playa</button>
+                    <button class="filter-btn" data-filter="civiles" data-i18n="filter-civiles">Obras Civiles</button>
+                </div>
+
+                <div class="portfolio-grid scroll-reveal">
+                    <!-- SECCIÓN PÉRGOLAS -->
+                    <div class="portfolio-item" data-category="pergolas">
+                        <img src="https://egygazebo.com/wp-content/uploads/2023/11/Aluminum-Pergola-Design-25.webp" alt="Pérgola de Aluminio Premium">
+                        <div class="portfolio-overlay">
+                            <h4 class="portfolio-item-title">Pérgola de Aluminio Arquitectónica</h4>
+                            <p class="portfolio-item-cat" data-i18n="cat-pergolas">Diseño Exclusivo</p>
+                            <button class="lightbox-trigger" data-src="https://egygazebo.com/wp-content/uploads/2023/11/Aluminum-Pergola-Design-25.webp" aria-label="Ver imagen ampliada"><i class="fa-solid fa-maximize"></i></button>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="pergolas">
+                        <img src="https://www.garden.eco/wp-content/uploads/2025/03/image0_images-of-a-pergola-ideas_images-of-a-pergola-ideas.jpg" alt="Pérgola Jardín Residencial">
+                        <div class="portfolio-overlay">
+                            <h4 class="portfolio-item-title">Pérgola Bio-Jardín</h4>
+                            <p class="portfolio-item-cat" data-i18n="cat-pergolas">Cartagena, Colombia</p>
+                            <button class="lightbox-trigger" data-src="https://www.garden.eco/wp-content/uploads/2025/03/image0_images-of-a-pergola-ideas_images-of-a-pergola-ideas.jpg" aria-label="Ver imagen ampliada"><i class="fa-solid fa-maximize"></i></button>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="pergolas">
+                        <img src="https://www.decoora.com/wp-content/uploads/2020/12/pergolas-aluminio.jpg" alt="Pérgola Moderna de Aluminio">
+                        <div class="portfolio-overlay">
+                            <h4 class="portfolio-item-title">Pérgola Minimalista</h4>
+                            <p class="portfolio-item-cat" data-i18n="cat-pergolas">Zona Terrazas</p>
+                            <button class="lightbox-trigger" data-src="https://www.decoora.com/wp-content/uploads/2020/12/pergolas-aluminio.jpg" aria-label="Ver imagen ampliada"><i class="fa-solid fa-maximize"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- SECCIÓN CASAS -->
+                    <div class="portfolio-item" data-category="casas">
+                        <img src="https://images.homify.com/v1438822597/p/photo/image/382353/IMG_6857_tratada.jpg" alt="Casa Residencial Modernista">
+                        <div class="portfolio-overlay">
+                            <h4 class="portfolio-item-title">Residencia de Lujo Tropical</h4>
+                            <p class="portfolio-item-cat" data-i18n="cat-casas">Barú, Bolívar</p>
+                            <button class="lightbox-trigger" data-src="https://images.homify.com/v1438822597/p/photo/image/382353/IMG_6857_tratada.jpg" aria-label="Ver imagen ampliada"><i class="fa-solid fa-maximize"></i></button>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="casas">
+                        <img src="https://maarquitectura.com.mx/wp-content/uploads/2021/04/Casas-modernas-de-dos-pisos.jpg" alt="Casa Moderna 2 Pisos">
+                        <div class="portfolio-overlay">
+                            <h4 class="portfolio-item-title">Casa Moderna Bioclimática</h4>
+                            <p class="portfolio-item-cat" data-i18n="cat-casas">Diseño Vanguardista</p>
+                            <button class="lightbox-trigger" data-src="https://maarquitectura.com.mx/wp-content/uploads/2021/04/Casas-modernas-de-dos-pisos.jpg" aria-label="Ver imagen ampliada"><i class="fa-solid fa-maximize"></i></button>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="casas">
+                        <img src="https://i.pinimg.com/originals/4c/ed/41/4ced419b55192f038599675b3ac3be08.jpg" alt="Casa Minimalista de Autor">
+                        <div class="portfolio-overlay">
+                            <h4 class="portfolio-item-title">Mansión Arquitectónica Premium</h4>
+                            <p class="portfolio-item-cat" data-i18n="cat-casas">Cartagena, Colombia</p>
+                            <button class="lightbox-trigger" data-src="https://i.pinimg.com/originals/4c/ed/41/4ced419b55192f038599675b3ac3be08.jpg" aria-label="Ver imagen ampliada"><i class="fa-solid fa-maximize"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- SECCIÓN APARTAMENTOS -->
+                    <div class="portfolio-item" data-category="apartamentos">
+                        <img src="https://d2p0bx8wfdkjkb.cloudfront.net/static/properties/40AOD8HVP2/NV1VX0E94M/rMgY5w3vk3/Torre_Horizontes_portada.jpg" alt="Torre Horizontes">
+                        <div class="portfolio-overlay">
+                            <h4 class="portfolio-item-title">Torre Horizontes Residencial</h4>
+                            <p class="portfolio-item-cat" data-i18n="cat-apto">Bocagrande, Cartagena</p>
+                            <button class="lightbox-trigger" data-src="https://d2p0bx8wfdkjkb.cloudfront.net/static/properties/40AOD8HVP2/NV1VX0E94M/rMgY5w3vk3/Torre_Horizontes_portada.jpg" aria-label="Ver imagen ampliada"><i class="fa-solid fa-maximize"></i></button>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="apartamentos">
+                        <img src="https://d2p0bx8wfdkjkb.cloudfront.net/static/properties/5RNFUT1YY5/7I89UOB2O8/k8zn3b4VAM/262c4a48-822f-4e66-ba74-b3d4191509b1.jpeg" alt="Edificio Multifamiliar Moderno">
+                        <div class="portfolio-overlay">
+                            <h4 class="portfolio-item-title">Complejo Residencial Altamar</h4>
+                            <p class="portfolio-item-cat" data-i18n="cat-apto">Castillogrande, Cartagena</p>
+                            <button class="lightbox-trigger" data-src="https://d2p0bx8wfdkjkb.cloudfront.net/static/properties/5RNFUT1YY5/7I89UOB2O8/k8zn3b4VAM/262c4a48-822f-4e66-ba74-b3d4191509b1.jpeg" aria-label="Ver imagen ampliada"><i class="fa-solid fa-maximize"></i></button>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="apartamentos">
+                        <img src="https://i.pinimg.com/474x/6e/bc/ad/6ebcad753e39ba010b13437f0862f266.jpg" alt="Torre de Apartamentos de Lujo">
+                        <div class="portfolio-overlay">
+                            <h4 class="portfolio-item-title">Torre Altura de Mar</h4>
+                            <p class="portfolio-item-cat" data-i18n="cat-apto">Zona Norte, Cartagena</p>
+                            <button class="lightbox-trigger" data-src="https://i.pinimg.com/474x/6e/bc/ad/6ebcad753e39ba010b13437f0862f266.jpg" aria-label="Ver imagen ampliada"><i class="fa-solid fa-maximize"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- SECCIÓN ESTRUCTURAS DE PLAYA -->
+                    <div class="portfolio-item" data-category="playa">
+                        <img src="https://darlingescapes.com/wp-content/uploads/2023/12/Cabo.jpg" alt="Club de Playa Resort">
+                        <div class="portfolio-overlay">
+                            <h4 class="portfolio-item-title">Club de Playa Cabo Resort</h4>
+                            <p class="portfolio-item-cat" data-i18n="cat-playa">Islas del Rosario</p>
+                            <button class="lightbox-trigger" data-src="https://darlingescapes.com/wp-content/uploads/2023/12/Cabo.jpg" aria-label="Ver imagen ampliada"><i class="fa-solid fa-maximize"></i></button>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="playa">
+                        <img src="https://goshalabi.com/wp-content/uploads/2023/11/10-870x555.jpeg" alt="Infraestructura Resort Costero">
+                        <div class="portfolio-overlay">
+                            <h4 class="portfolio-item-title">Estructura Ecológica Costera</h4>
+                            <p class="portfolio-item-cat" data-i18n="cat-playa">Barú, Colombia</p>
+                            <button class="lightbox-trigger" data-src="https://goshalabi.com/wp-content/uploads/2023/11/10-870x555.jpeg" aria-label="Ver imagen ampliada"><i class="fa-solid fa-maximize"></i></button>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="playa">
+                        <img src="https://www.instalacioncastellon.es/wp-content/uploads/2021/11/instalacion-castellon-estructura-playa-foinal.jpeg" alt="Estructura Palapa de Playa">
+                        <div class="portfolio-overlay">
+                            <h4 class="portfolio-item-title">Muelle & Decks de Madera</h4>
+                            <p class="portfolio-item-cat" data-i18n="cat-playa">Zona Costera</p>
+                            <button class="lightbox-trigger" data-src="https://www.instalacioncastellon.es/wp-content/uploads/2021/11/instalacion-castellon-estructura-playa-foinal.jpeg" aria-label="Ver imagen ampliada"><i class="fa-solid fa-maximize"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- SECCIÓN OBRAS CIVILES -->
+                    <div class="portfolio-item" data-category="civiles">
+                        <img src="https://www.expocihachub.com/img/blog/obra-civil-obra-civil.jpg" alt="Proyecto de Obra Civil">
+                        <div class="portfolio-overlay">
+                            <h4 class="portfolio-item-title">Infraestructura Vial y Urbanismo</h4>
+                            <p class="portfolio-item-cat" data-i18n="cat-civiles">Zona Norte, Cartagena</p>
+                            <button class="lightbox-trigger" data-src="https://www.expocihachub.com/img/blog/obra-civil-obra-civil.jpg" aria-label="Ver imagen ampliada"><i class="fa-solid fa-maximize"></i></button>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="civiles">
+                        <img src="https://www.jumabeda.com/wp-content/uploads/2025/03/a-photo-of-a-drone-s-eye-view-of-a-devel_e468nysAT9yA1WxdnAAVhg_oUOsUioDRd2ak3zGUVUv6w.jpeg" alt="Desarrollo Macro Obra Vista Dron">
+                        <div class="portfolio-overlay">
+                            <h4 class="portfolio-item-title">Gerencia & Supervisión de Obra</h4>
+                            <p class="portfolio-item-cat" data-i18n="cat-civiles">Cartagena, Colombia</p>
+                            <button class="lightbox-trigger" data-src="https://www.jumabeda.com/wp-content/uploads/2025/03/a-photo-of-a-drone-s-eye-view-of-a-devel_e468nysAT9yA1WxdnAAVhg_oUOsUioDRd2ak3zGUVUv6w.jpeg" aria-label="Ver imagen ampliada"><i class="fa-solid fa-maximize"></i></button>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="civiles">
+                        <img src="https://timesofindia.indiatimes.com/photo/126322088.cms" alt="Infraestructura Civil Megaproyecto">
+                        <div class="portfolio-overlay">
+                            <h4 class="portfolio-item-title">Cimentación y Megaproyectos</h4>
+                            <p class="portfolio-item-cat" data-i18n="cat-civiles">Nivel Nacional</p>
+                            <button class="lightbox-trigger" data-src="https://timesofindia.indiatimes.com/photo/126322088.cms" aria-label="Ver imagen ampliada"><i class="fa-solid fa-maximize"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="lightboxModal" class="lightbox">
+            <span class="lightbox-close">×</span>
+            <img class="lightbox-content" id="lightboxImg" src="" alt="Vista ampliada del proyecto">
+        </div>
+
+        <section id="cotizador" class="calc-section section-padding bg-dark text-white">
+            <div class="container">
+                <div class="text-center scroll-reveal">
+                    <span class="section-subtitle gold-text" data-i18n="calc-subtitle">Planificación Presupuestaria</span>
+                    <h2 class="section-title text-white" data-i18n="calc-title">Cotizador & Simulador Financiero</h2>
+                </div>
+
+                <div class="grid-2 section-padding-top items-start">
+                    <div class="calc-card scroll-reveal">
+                        <h3 class="calc-card-title"><i class="fa-solid fa-compass-drafting"></i> <span data-i18n="c1-title">1. Estima el Valor de tu Obra</span></h3>
+                        <form id="cotizadorForm" class="calc-form">
+                            <div class="form-group">
+                                <label for="tipoProyecto" data-i18n="c1-l1">Tipo de Proyecto</label>
+                                <select id="tipoProyecto" class="form-input">
+                                    <option value="pergola" data-i18n="opt-p">Pérgolas de Lujo</option>
+                                    <option value="kiosco" data-i18n="opt-k">Kioscos Modernos</option>
+                                    <option value="playa" data-i18n="opt-e">Estructuras de Playa</option>
+                                    <option value="casa" data-i18n="opt-casa">Casas Premium</option>
+                                    <option value="apto" data-i18n="opt-apto">Apartamentos / Remodelación</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="areaProyecto" data-i18n="c1-l2">Área Estimada (m²)</label>
+                                <input type="number" id="areaProyecto" class="form-input" min="10" value="30" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="acabados" data-i18n="c1-l3">Nivel de Acabados</label>
+                                <select id="acabados" class="form-input">
+                                    <option value="estandar" data-i18n="fin-e">Estándar High-End</option>
+                                    <option value="premium" data-i18n="fin-p">Premium Custom</option>
+                                    <option value="ultra" data-i18n="fin-u">Ultra Premium / Ultra Lujo</option>
+                                </select>
+                            </div>
+
+                            <div class="currency-toggle-wrapper">
+                                <button type="button" id="btnCambiarMoneda" class="btn btn-secondary btn-sm">
+                                    <i class="fa-solid fa-money-bill-transfer"></i> <span data-i18n="btn-currency">Cambiar Moneda (COP / USD)</span>
+                                </button>
+                                <span class="api-status-text" data-i18n="api-text">Tasa actualizada automáticamente</span>
+                            </div>
+                        </form>
+
+                        <div class="results-display">
+                            <div class="result-row">
+                                <span data-i18n="res-v1">Valor Estimado Obra:</span>
+                                <strong id="resValorObra">$ 0.00</strong>
+                            </div>
+                            <div class="result-row">
+                                <span data-i18n="res-v2">Cuota Base Sugerida:</span>
+                                <strong id="resCuotaBase">$ 0.00</strong>
+                            </div>
+                            <small class="currency-indicator"><span data-i18n="moneda-actual">Moneda Actual:</span> <span id="currentCurrencyTxt">COP</span></small>
+                        </div>
+                    </div>
+
+                    <div class="calc-card scroll-reveal">
+                        <h3 class="calc-card-title"><i class="fa-solid fa-chart-line"></i> <span data-i18n="c2-title">2. Plan de Financiación Directa</span></h3>
+                        <form id="financiacionForm" class="calc-form">
+                            <div class="form-group">
+                                <label id="labelValorObraSimulada" for="valorFinanciación" data-i18n="c2-l1">Monto de la Obra a Simular</label>
+                                <input type="text" id="valorFinanciación" class="form-input" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="cuotaInicial" data-i18n="c2-l2">Cuota Inicial (Mínimo 30%)</label>
+                                <input type="number" id="cuotaInicial" class="form-input" min="30" max="90" value="30">
+                            </div>
+                            <div class="form-group">
+                                <label for="plazoMeses" data-i18n="c2-l3">Plazo Amortización</label>
+                                <select id="plazoMeses" class="form-input">
+                                    <option value="12">12 Meses</option>
+                                    <option value="24">24 Meses</option>
+                                    <option value="36">36 Meses</option>
+                                    <option value="48">48 Meses</option>
+                                    <option value="60">60 Meses</option>
+                                </select>
+                            </div>
+                        </form>
+
+                        <div class="results-display results-gold">
+                            <div class="result-row">
+                                <span data-i18n="res-f1">Cuota Mensual Estimada:</span>
+                                <strong id="resCuotaMensual">$ 0.00</strong>
+                            </div>
+                            <div class="result-row">
+                                <span data-i18n="res-f2">Total Financiado:</span>
+                                <strong id="resTotalFinanciado">$ 0.00</strong>
+                            </div>
+                            <div class="result-row">
+                                <span data-i18n="res-f3">Intereses Estimados:</span>
+                                <strong id="resIntereses">$ 0.00</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section section-padding bg-light">
+            <div class="container">
+                <div class="text-center scroll-reveal">
+                    <span class="section-subtitle" data-i18n="test-subtitle">Clientes Corporativos y Residenciales</span>
+                    <h2 class="section-title" data-i18n="test-title">Experiencias Pérgolas del Caribe</h2>
+                </div>
+
+                <div class="carousel-container section-padding-top scroll-reveal">
+                    <div class="carousel-track-wrapper">
+                        <div class="carousel-track" id="carouselTrack">
+                            <div class="testimonial-slide">
+                                <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+                                <p class="testimonial-text">"El diseño de la pérgola de nuestra terraza en Castillogrande superó todas las expectativas. Un acabado impecable y resistencia total frente al salitre del mar."</p>
+                                <h4 class="testimonial-author">Alejandro Santo Domingo</h4>
+                                <small class="testimonial-role" data-i18n="role-1">Propietario Residencia Premium</small>
+                            </div>
+                            <div class="testimonial-slide">
+                                <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+                                <p class="testimonial-text">"Excelente gerencia del proyecto para las nuevas estructuras de playa de nuestro hotel. Cumplieron con los plazos ambientales y de ingeniería al pie de la letra."</p>
+                                <h4 class="testimonial-author">Beatriz Mendoza</h4>
+                                <small class="testimonial-role" data-i18n="role-2">Directora de Operaciones - EcoHotel</small>
+                            </div>
+                            <div class="testimonial-slide">
+                                <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+                                <p class="testimonial-text">"Un equipo altamente profesional en la consultoría y simulación de costos. Gracias a sus presupuestos logramos optimizar la construcción de nuestro edificio de apartamentos."</p>
+                                <h4 class="testimonial-author">Ing. Carlos Restrepo</h4>
+                                <small class="testimonial-role" data-i18n="role-3">Gerente de Proyectos Civiles</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-dots" id="carouselDots"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="map-info-box scroll-reveal">
+                <h4 data-i18n="map-title"><i class="fa-solid fa-building-flag"></i> Sede Principal</h4>
+                <p class="paragraph">Cartagena de Indias, Colombia</p>
+                <p class="paragraph"><small data-i18n="map-desc">Despachos y dirección técnica a nivel nacional.</small></p>
+            </div>
+            <div class="map-iframe-container">
+                <iframe 
+                    src="https://maps.google.com/maps?q=Cartagena,%20Colombia&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Ubicación Sede Principal Pérgolas del Caribe">
+                </iframe>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact-section section-padding">
+            <div class="container">
+                <div class="text-center scroll-reveal">
+                    <span class="section-subtitle" data-i18n="contact-subtitle">Atención Personalizada</span>
+                    <h2 class="section-title" data-i18n="contact-title">Inicie su Proyecto con Nosotros</h2>
+                </div>
+
+                <div class="contact-wrapper section-padding-top scroll-reveal">
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-grid-2">
+                            <div class="form-group">
+                                <label for="contactNombre" data-i18n="f-n">Nombre Completo *</label>
+                                <input type="text" id="contactNombre" class="form-input" required>
+                                <span class="error-msg" id="errNombre" data-i18n="err-n">Por favor ingrese su nombre.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail" data-i18n="f-e">Correo Electrónico *</label>
+                                <input type="email" id="contactEmail" class="form-input" required>
+                                <span class="error-msg" id="errEmail" data-i18n="err-e">Ingrese un correo electrónico válido.</span>
+                            </div>
+                        </div>
+
+                        <div class="form-grid-2">
+                            <div class="form-group">
+                                <label for="contactTelefono" data-i18n="f-t">Teléfono / Celular *</label>
+                                <input type="tel" id="contactTelefono" class="form-input" required>
+                                <span class="error-msg" id="errTelefono" data-i18n="err-t">Ingrese un número telefónico válido.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactCiudad" data-i18n="f-c">Ciudad de la Obra *</label>
+                                <input type="text" id="contactCiudad" class="form-input" required>
+                                <span class="error-msg" id="errCiudad" data-i18n="err-c">Indique la ciudad de ejecución.</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactServicio" data-i18n="f-s">Servicio Requerido *</label>
+                            <select id="contactServicio" class="form-input" required>
+                                <option value="" disabled selected data-i18n="f-s-sel">Seleccione una opción</option>
+                                <option value="pergolas" data-i18n="opt-p">Construcción de Pérgolas</option>
+                                <option value="kioscos" data-i18n="opt-k">Construcción de Kioscos</option>
+                                <option value="balcones" data-i18n="opt-b">Construcción de Balcones</option>
+                                <option value="playa" data-i18n="opt-e">Estructuras para Playas</option>
+                                <option value="casas" data-i18n="opt-casa">Construcción de Casas</option>
+                                <option value="apartamentos" data-i18n="opt-apto">Construcción de Apartamentos</option>
+                                <option value="proyectos" data-i18n="opt-dis">Diseño y Proyectos Arquitectónicos</option>
+                                <option value="gerencia" data-i18n="opt-ger">Dirección y Gerencia de Obra</option>
+                                <option value="consultoria" data-i18n="opt-con">Presupuestos y Consultoría Civiles</option>
+                            </select>
+                            <span class="error-msg" id="errServicio" data-i18n="err-s">Seleccione un servicio.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMensaje" data-i18n="f-m">Detalles del Proyecto *</label>
+                            <textarea id="contactMensaje" class="form-input" rows="5" required></textarea>
+                            <span class="error-msg" id="errMensaje" data-i18n="err-m">Cuéntenos un poco más sobre sus requerimientos.</span>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-wide" id="btnEnviarForm">
+                                <i class="fa-solid fa-paper-plane"></i> <span data-i18n="btn-submit">Enviar Solicitud</span>
+                            </button>
+                        </div>
+                        <div id="formSuccessMsg" class="form-success-box" data-i18n="form-success">
+                            ¡Solicitud enviada con éxito! Un consultor especializado se comunicará con usted.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer bg-dark text-white">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <h4>PÉRGOLAS DEL CARIBE</h4>
+                <p class="paragraph" data-i18n="footer-desc">Construcción, ingeniería y diseño arquitectónico de lujo. Operamos desde la costa caribeña hacia todo el territorio nacional.</p>
+            </div>
+            <div class="footer-links">
+                <h5 data-i18n="f-links-t">Enlaces Rápidos</h5>
+                <ul>
+                    <li><a href="#inicio" data-i18n="nav-inicio">Inicio</a></li>
+                    <li><a href="#nosotros" data-i18n="nav-nosotros">Nosotros</a></li>
+                    <li><a href="#servicios" data-i18n="nav-servicios">Servicios</a></li>
+                    <li><a href="#proyectos" data-i18n="nav-proyectos">Proyectos</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact-info">
+                <h5 data-i18n="f-contact-t">Contacto Directo</h5>
+                <p><i class="fa-solid fa-phone"></i> +57 321 420 4035</p>
+                <p><i class="fa-solid fa-envelope"></i> info@pergolasdelcaribe.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Cartagena, Colombia</p>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>© 2026 Pérgolas del Caribe. All Rights Reserved. | <span data-i18n="footer-legal">Diseño Premium de Alta Gama</span></p>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="btn-back-to-top" aria-label="Volver arriba">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <a href="https://wa.me/573214204035?text=Hola,%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios." 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Chat con Pérgolas del Caribe en WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            initLoader();
+            initHeaderScroll();
+            initMobileMenu();
+            initScrollReveal();
+            initParallax();
+            initStatsCounter();
+            initPortfolioFilter();
+            initLightbox();
+            initCalculatorAndFinancing();
+            initTestimonialsCarousel();
+            initContactValidation();
+            initLanguageSelector();
+        });
+
+        function initLoader() {
+            const loader = document.getElementById('loader');
+            if(loader) {
+                window.addEventListener('load', () => {
+                    setTimeout(() => {
+                        loader.style.opacity = '0';
+                        loader.style.visibility = 'hidden';
+                    }, 600);
+                });
+            }
+        }
+
+        function initHeaderScroll() {
+            const header = document.querySelector('.main-header');
+            const backToTop = document.getElementById('backToTop');
+            
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+                
+                if (window.scrollY > 600) {
+                    backToTop.classList.add('show');
+                } else {
+                    backToTop.classList.remove('show');
+                }
+            });
+
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+
+        function initMobileMenu() {
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.getElementById('navMenu');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            if(hamburger) {
+                hamburger.addEventListener('click', () => {
+                    hamburger.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                });
+
+                navLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        hamburger.classList.remove('active');
+                        navMenu.classList.remove('active');
+                    });
+                });
+            }
+        }
+
+        function initScrollReveal() {
+            const items = document.querySelectorAll('.scroll-reveal');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('revealed');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15 });
+
+            items.forEach(item => observer.observe(item));
+        }
+
+        function initParallax() {
+            const parallaxBg = document.querySelector('.hero-parallax-bg');
+            if (parallaxBg) {
+                window.addEventListener('scroll', () => {
+                    let offset = window.scrollY;
+                    parallaxBg.style.transform = `translateY(${offset * 0.4}px)`;
+                });
+            }
+        }
+
+        function initStatsCounter() {
+            const statsSection = document.querySelector('.stats-container');
+            const counters = document.querySelectorAll('.stat-number');
+            
+            if(!statsSection) return;
+
+            let started = false;
+
+            const startCounting = () => {
+                counters.forEach(counter => {
+                    const target = +counter.getAttribute('data-target');
+                    const increment = target / 50;
+                    
+                    const updateCount = () => {
+                        const count = +counter.innerText;
+                        if (count < target) {
+                            counter.innerText = Math.ceil(count + increment);
+                            setTimeout(updateCount, 30);
+                        } else {
+                            counter.innerText = target;
+                        }
+                    };
+                    updateCount();
+                });
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                if(entries[0].isIntersecting && !started) {
+                    started = true;
+                    startCounting();
+                }
+            }, { threshold: 0.5 });
+
+            observer.observe(statsSection);
+        }
+
+        function initPortfolioFilter() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+
+                    const filterValue = button.getAttribute('data-filter');
+
+                    portfolioItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                            setTimeout(() => item.style.opacity = '1', 50);
+                        } else {
+                            item.style.opacity = '0';
+                            setTimeout(() => item.style.display = 'none', 300);
+                        }
+                    });
+                });
+            });
+        }
+
+        function initLightbox() {
+            const modal = document.getElementById('lightboxModal');
+            const modalImg = document.getElementById('lightboxImg');
+            const triggers = document.querySelectorAll('.lightbox-trigger');
+            const closeBtn = document.querySelector('.lightbox-close');
+
+            if(!modal) return;
+
+            triggers.forEach(trigger => {
+                trigger.addEventListener('click', () => {
+                    const src = trigger.getAttribute('data-src');
+                    modal.classList.add('show');
+                    modalImg.src = src;
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+
+            const closeModal = () => {
+                modal.classList.remove('show');
+                document.body.style.overflow = 'auto';
+            };
+
+            closeBtn.addEventListener('click', closeModal);
+            modal.addEventListener('click', (e) => {
+                if(e.target === modal) closeModal();
+            });
+        }
+
+        function initCalculatorAndFinancing() {
+            const tipoProyecto = document.getElementById('tipoProyecto');
+            const areaProyecto = document.getElementById('areaProyecto');
+            const acabados = document.getElementById('acabados');
+            const btnCambiarMoneda = document.getElementById('btnCambiarMoneda');
+            const currentCurrencyTxt = document.getElementById('currentCurrencyTxt');
+            
+            const resValorObra = document.getElementById('resValorObra');
+            const resCuotaBase = document.getElementById('resCuotaBase');
+            
+            const valorFinanciacionInput = document.getElementById('valorFinanciación');
+            const cuotaInicialSelect = document.getElementById('cuotaInicial');
+            const plazoMesesSelect = document.getElementById('plazoMeses');
+            
+            const resCuotaMensual = document.getElementById('resCuotaMensual');
+            const resTotalFinanciado = document.getElementById('resTotalFinanciado');
+            const resIntereses = document.getElementById('resIntereses');
+
+            let currentCurrency = 'COP'; 
+            let usdExchangeRate = 4000; 
+
+            const preciosBase = {
+                pergola: 450000,
+                kiosco: 550000,
+                playa: 650000,
+                casa: 2200000,
+                apto: 1400000
+            };
+
+            const multiplicadoresAcabado = {
+                estandar: 1.0,
+                premium: 1.35,
+                ultra: 1.75
+            };
+
+            async function fetchExchangeRate() {
+                try {
+                    const response = await fetch('https://open.er-api.com/v6/latest/USD');
+                    const data = await response.json();
+                    if (data && data.rates && data.rates.COP) {
+                        usdExchangeRate = data.rates.COP;
+                    }
+                } catch (error) {
+                    console.warn("No se pudo obtener la TRM del API, usando fallback.");
+                }
+            }
+
+            function formatNumber(value) {
+                return new Intl.NumberFormat(currentCurrency === 'COP' ? 'es-CO' : 'en-US', {
+                    style: 'currency',
+                    currency: currentCurrency,
+                    maximumFractionDigits: 0
+                }).format(value);
+            }
+
+            function calcularTodo() {
+                const precioMetro = preciosBase[tipoProyecto.value] || 0;
+                const factorAcabado = multiplicadoresAcabado[acabados.value] || 1;
+                const area = parseFloat(areaProyecto.value) || 0;
+
+                let valorObraCOP = precioMetro * area * factorAcabado;
+                let cuotaBaseCOP = valorObraCOP / 24;
+
+                let valorObraFinal = currentCurrency === 'COP' ? valorObraCOP : valorObraCOP / usdExchangeRate;
+                let cuotaBaseFinal = currentCurrency === 'COP' ? cuotaBaseCOP : cuotaBaseCOP / usdExchangeRate;
+
+                resValorObra.innerText = formatNumber(valorObraFinal);
+                resCuotaBase.innerText = formatNumber(cuotaBaseFinal);
+
+                valorFinanciacionInput.value = formatNumber(valorObraFinal);
+
+                const porcentajeCuotaInicial = parseFloat(cuotaInicialSelect.value) / 100;
+                const plazo = parseInt(plazoMesesSelect.value);
+
+                const montoCuotaInicial = valorObraFinal * porcentajeCuotaInicial;
+                const totalFinanciar = valorObraFinal - montoCuotaInicial;
+
+                const tasaInteresMensual = currentCurrency === 'COP' ? 0.012 : 0.007;
+                
+                let cuotaMensual = 0;
+                if(totalFinanciar > 0) {
+                    cuotaMensual = (totalFinanciar * tasaInteresMensual) / (1 - Math.pow(1 + tasaInteresMensual, -plazo));
+                }
+
+                const totalPagadoConInteres = cuotaMensual * plazo;
+                const interesesEstimados = totalPagadoConInteres - totalFinanciar;
+
+                resCuotaMensual.innerText = formatNumber(cuotaMensual);
+                resTotalFinanciado.innerText = formatNumber(totalFinanciar);
+                resIntereses.innerText = formatNumber(interesesEstimados >= 0 ? interesesEstimados : 0);
+            }
+
+            [tipoProyecto, areaProyecto, acabados, cuotaInicialSelect, plazoMesesSelect].forEach(element => {
+                element.addEventListener('input', calcularTodo);
+            });
+
+            btnCambiarMoneda.addEventListener('click', () => {
+                currentCurrency = currentCurrency === 'COP' ? 'USD' : 'COP';
+                currentCurrencyTxt.innerText = currentCurrency;
+                calcularTodo();
+            });
+
+            fetchExchangeRate().then(() => calcularTodo());
+        }
+
+        function initTestimonialsCarousel() {
+            const track = document.getElementById('carouselTrack');
+            const slides = document.querySelectorAll('.testimonial-slide');
+            const dotsContainer = document.getElementById('carouselDots');
+            
+            if(!track || slides.length === 0) return;
+
+            let currentIndex = 0;
+            let timer;
+
+            slides.forEach((_, index) => {
+                const dot = document.createElement('div');
+                dot.classList.add('dot');
+                if(index === 0) dot.classList.add('active');
+                dot.addEventListener('click', () => goToSlide(index));
+                dotsContainer.appendChild(dot);
+            });
+
+            const dots = document.querySelectorAll('.dot');
+
+            function updateDots() {
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentIndex);
+                });
+            }
+
+            function goToSlide(index) {
+                currentIndex = index;
+                track.style.transform = `translateX(-${currentIndex * 100}%)`;
+                updateDots();
+                resetTimer();
+            }
+
+            function nextSlide() {
+                let next = (currentIndex + 1) % slides.length;
+                goToSlide(next);
+            }
+
+            function resetTimer() {
+                clearInterval(timer);
+                timer = setInterval(nextSlide, 5000);
+            }
+
+            resetTimer();
+        }
+
+        function initContactValidation() {
+            const form = document.getElementById('contactForm');
+            if(!form) return;
+
+            const fields = [
+                { id: 'contactNombre', errId: 'errNombre', validate: val => val.trim() !== '' },
+                { id: 'contactEmail', errId: 'errEmail', validate: val => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val) },
+                { id: 'contactTelefono', errId: 'errTelefono', validate: val => val.trim().length >= 7 },
+                { id: 'contactCiudad', errId: 'errCiudad', validate: val => val.trim() !== '' },
+                { id: 'contactServicio', errId: 'errServicio', validate: val => val !== '' },
+                { id: 'contactMensaje', errId: 'errMensaje', validate: val => val.trim().length > 10 }
+            ];
+
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                let isFormValid = true;
+
+                fields.forEach(field => {
+                    const input = document.getElementById(field.id);
+                    const errorSpan = document.getElementById(field.errId);
+                    const isValid = field.validate(input.value);
+
+                    if(!isValid) {
+                        input.classList.add('invalid');
+                        errorSpan.style.display = 'block';
+                        isFormValid = false;
+                    } else {
+                        input.classList.remove('invalid');
+                        errorSpan.style.display = 'none';
+                    }
+                });
+
+                if(isFormValid) {
+                    document.getElementById('btnEnviarForm').disabled = true;
+                    document.getElementById('formSuccessMsg').style.display = 'block';
+                    
+                    setTimeout(() => {
+                        form.reset();
+                        document.getElementById('btnEnviarForm').disabled = false;
+                        document.getElementById('formSuccessMsg').style.display = 'none';
+                    }, 4000);
+                }
+            });
+        }
+
+        function initLanguageSelector() {
+            const langButtons = document.querySelectorAll('.lang-btn');
+            
+            const dictionary = {
+                es: {
+                    "nav-inicio": "Inicio", "nav-nosotros": "Nosotros", "nav-servicios": "Servicios", "nav-proyectos": "Proyectos", "nav-cotizador": "Cotizador", "nav-contacto": "Contacto",
+                    "btn-header": "Solicitar Cotización", "hero-subtitle": "Construimos espacios que transforman vidas", "btn-hero-1": "Solicitar Presupuesto", "btn-hero-2": "Ver Proyectos",
+                    "scroll-down": "Descubrir", "about-subtitle": "Arquitectura de Vanguardia", "about-title": "Nuestra Trayectoria", "about-badge": "Años de Excelencia",
+                    "stat-1": "Proyectos Completados", "stat-2": "Clientes Satisfechos", "stat-3": "Años de Experiencia", "stat-4": "Ciudades Atendidas",
+                    "services-subtitle": "Soluciones Integrales", "services-title": "Nuestros Servicios Profesionales", "btn-more": "Saber Más",
+                    "portfolio-subtitle": "Portafolio Exclusivo", "portfolio-title": "Obras Arquitectónicas Sello Premium",
+                    "filter-all": "Todos", "filter-pergolas": "Pérgolas", "filter-casas": "Casas", "filter-apto": "Apartamentos", "filter-playa": "Estructuras de Playa", "filter-civiles": "Obras Civiles",
+                    "calc-subtitle": "Planificación Presupuestaria", "calc-title": "Cotizador & Simulador Financiero", "c1-title": "1. Estima el Valor de tu Obra",
+                    "c1-l1": "Tipo de Proyecto", "c1-l2": "Área Estimada (m²)", "c1-l3": "Nivel de Acabados", "btn-currency": "Cambiar Moneda (COP / USD)", "api-text": "Tasa actualizada automáticamente",
+                    "res-v1": "Valor Estimado Obra:", "res-v2": "Cuota Base Sugerida:", "moneda-actual": "Moneda Actual:", "c2-title": "2. Plan de Financiación Directa",
+                    "c2-l1": "Monto de la Obra a Simular", "c2-l2": "Cuota Inicial (Mínimo 30%)", "c2-l3": "Plazo Amortización", "res-f1": "Cuota Mensual Estimada:", "res-f2": "Total Financiado:", "res-f3": "Intereses Estimados:",
+                    "test-subtitle": "Clientes Corporativos y Residenciales", "test-title": "Experiencias Pérgolas del Caribe", "map-title": "Sede Principal", "map-desc": "Despachos y dirección técnica a nivel nacional.",
+                    "contact-subtitle": "Atención Personalizada", "contact-title": "Inicie su Proyecto con Nosotros", "f-n": "Nombre Completo *", "f-e": "Correo Electrónico *", "f-t": "Teléfono / Celular *", "f-c": "Ciudad de la Obra *", "f-s": "Servicio Requerido *", "f-m": "Detalles del Proyecto *", "btn-submit": "Enviar Solicitud"
+                },
+                en: {
+                    "nav-inicio": "Home", "nav-nosotros": "About Us", "nav-servicios": "Services", "nav-proyectos": "Projects", "nav-cotizador": "Quote Tool", "nav-contacto": "Contact",
+                    "btn-header": "Request a Quote", "hero-subtitle": "We build spaces that transform lives", "btn-hero-1": "Request Budget", "btn-hero-2": "View Projects",
+                    "scroll-down": "Discover", "about-subtitle": "Vanguard Architecture", "about-title": "Our Journey", "about-badge": "Years of Excellence",
+                    "stat-1": "Completed Projects", "stat-2": "Satisfied Clients", "stat-3": "Years of Experience", "stat-4": "Cities Served",
+                    "services-subtitle": "Comprehensive Solutions", "services-title": "Our Professional Services", "btn-more": "Learn More",
+                    "portfolio-subtitle": "Exclusive Portfolio", "portfolio-title": "Premium Stamp Architectural Works",
+                    "filter-all": "All", "filter-pergolas": "Pergolas", "filter-casas": "Houses", "filter-apto": "Apartments", "filter-playa": "Beach Structures", "filter-civiles": "Civil Works",
+                    "calc-subtitle": "Budget Planning", "calc-title": "Financial Quote & Simulator", "c1-title": "1. Estimate the Value of your Work",
+                    "c1-l1": "Project Type", "c1-l2": "Estimated Area (sqm)", "c1-l3": "Finishing Level", "btn-currency": "Change Currency (COP / USD)", "api-text": "Exchange rate automatically updated",
+                    "res-v1": "Estimated Work Value:", "res-v2": "Suggested Base Fee:", "moneda-actual": "Current Currency:", "c2-title": "2. Direct Financing Plan",
+                    "c2-l1": "Amount of the Work to Simulate", "c2-l2": "Down Payment (Minimum 30%)", "c2-l3": "Amortization Term", "res-f1": "Estimated Monthly Fee:", "res-f2": "Total Financed:", "res-f3": "Estimated Interest:",
+                    "test-subtitle": "Corporate & Residential Clients", "test-title": "Pérgolas del Caribe Experiences", "map-title": "Headquarters", "map-desc": "Dispatches and technical direction nationwide.",
+                    "contact-subtitle": "Personalized Attention", "contact-title": "Start your Project with Us", "f-n": "Full Name *", "f-e": "Email Address *", "f-t": "Phone / Mobile *", "f-c": "City of the Work *", "f-s": "Service Required *", "f-m": "Project Details *", "btn-submit": "Send Request"
+                }
+            };
+
+            langButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    langButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+
+                    const selectedLang = button.getAttribute('data-lang');
+                    
+                    document.querySelectorAll('[data-i18n]').forEach(element => {
+                        const key = element.getAttribute('data-i18n');
+                        if(dictionary[selectedLang][key]) {
+                            if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                                element.placeholder = dictionary[selectedLang][key];
+                            } else {
+                                element.innerText = dictionary[selectedLang][key];
+                            }
+                        }
+                    });
+                });
+            });
+        }
+    </script>
+</body>
+</html>
